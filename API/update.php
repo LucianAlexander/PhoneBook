@@ -1,23 +1,30 @@
 <?php
     
 require "init.php";
-
-$stmt = $con->prepare("UPDATE persone SET peer_nome = ?, peer_cognome = ? , peer_indirizzo = ?, peer_tel = ?, peer_eta = ?
-                                                                          WHERE
-                                                                          peer_tel = '$tel' OR
-                                                                          peer_cognome = '$cognome'" );
-$stmt->bind_param("sssss", $nome, $cognome, $indirizzo, $tel, $eta);
-
+    
+    
     $nome = $_POST["nome"];
     $cognome = $_POST["cognome"];
     $indirizzo = $_POST["indir"];
     $tel = $_POST["tel"];  
     $eta = $_POST["eta"];
+    $oldtel = $_POST["tel2"];
    
+    
+    $stmt = $con->prepare("UPDATE persone SET peer_nome = ?, peer_cognome = ? , peer_indirizzo = ?, peer_tel = ?, peer_eta = ?
+                                                                          WHERE
+                                                                          peer_tel = ?" );
 
-$response["success"] = false; 
-$result = $stmt->execute();
-$response["success"]= $result;
+    $stmt->bind_param("ssssss", $nome, $cognome, $indirizzo, $tel, $eta, $oldtel);
+
+  
+    $response["success"] = false; 
+    $result = $stmt->execute();
+    $response["success"]= $result;                                                                        
+
+
+
+   // $nome = ["nome"];
 
 if($response["success"] == true){
           $sql = "SELECT peer_nome, peer_cognome, peer_indirizzo, peer_tel, peer_eta FROM persone  ORDER BY persone.peer_id DESC";
