@@ -144,7 +144,7 @@ public class ViewContatto extends AppCompatActivity {
                                 } else {
                                     pb.setVisibility(View.GONE);
                                     AlertDialog.Builder builder = new AlertDialog.Builder((ViewContatto.this));
-                                    builder.setMessage("Qualcosa è andata male")
+                                    builder.setMessage("Attenzione, Il numero di telefono deve essere unico!")
                                             .create()
                                             .show();
 

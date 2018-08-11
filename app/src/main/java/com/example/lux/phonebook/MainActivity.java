@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                                     Intent intent = new Intent(MainActivity.this, listaPersone.class);
                                     intent.putExtra("json", JSON_STRING);
                                     MainActivity.this.startActivity(intent);
-
+                                    finishAfterTransition();
 
                                 } else {
                                     spinn.setVisibility(View.GONE);
@@ -118,6 +118,7 @@ public class MainActivity extends AppCompatActivity {
                                     todata.putExtra("json", JSON_STRING);
                                     MainActivity.this.startActivity(todata);
                                     spinn.setVisibility(View.GONE);
+                                    finishAfterTransition();
                                 } else {
                                     spinn.setVisibility(View.GONE);
                                     AlertDialog.Builder builder = new AlertDialog.Builder((MainActivity.this));
