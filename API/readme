@@ -1,4 +1,4 @@
-In this folder are the php file used by the app in order to :
+In var/www/html/sons :
 - make login : login.php
 - register   : reg.php
 - insert new contact : insert.php
