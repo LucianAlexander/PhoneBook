@@ -2,11 +2,7 @@ In the API folder u can find all the scripts for the server.
 In the database folder u cand find the configuration of the db used.
 All the java files to this path :  PhoneBook/app/src/main/java/com/example/lux/phonebook/LogInRequest.java 
 Current issue :
- 1.delete contact;
-     - on delete contact I get a message error(wrong credentials), but the contact is removed from the db, and to
-     see the chage, we have to close the app and log in again.
-     - delete.php seems fine, just need to check ViewContatto.java and listaPersone.java to understand the problem
- 2.update contact;
+ 1.update contact;
      - still working on the php code;
      
      
