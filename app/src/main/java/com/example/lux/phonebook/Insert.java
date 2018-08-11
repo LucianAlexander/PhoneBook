@@ -71,6 +71,7 @@ public class Insert extends AppCompatActivity {
 
                                     todata.putExtra("json", JSON_STRING);
                                     Insert.this.startActivity(todata);
+                                    finishAfterTransition();
 
                                 } else {
                                     spin3.setVisibility(View.GONE);

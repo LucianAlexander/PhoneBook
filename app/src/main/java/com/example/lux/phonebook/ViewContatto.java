@@ -81,6 +81,7 @@ public class ViewContatto extends AppCompatActivity {
                                     Intent intent = new Intent(ViewContatto.this, listaPersone.class);
                                     intent.putExtra("json", JSON_STRING);
                                     ViewContatto.this.startActivity(intent);
+                                    finishAfterTransition();
 
 
                                 } else {
@@ -89,7 +90,6 @@ public class ViewContatto extends AppCompatActivity {
                                     builder.setMessage("Credenziali Sbagliati, Riprova o Registrati")
                                             .create()
                                             .show();
-
 
                                 }
                             } catch (JSONException e) {
@@ -136,7 +136,7 @@ public class ViewContatto extends AppCompatActivity {
                                     Intent intent = new Intent(ViewContatto.this, listaPersone.class);
                                     intent.putExtra("json", JSON_STRING);
                                     ViewContatto.this.startActivity(intent);
-
+                                    finishAfterTransition();
 
                                 } else {
                                     pb.setVisibility(View.GONE);

@@ -76,6 +76,7 @@ public class listaPersone extends AppCompatActivity {
                 spin2.setVisibility(View.VISIBLE);
                 Intent toRege = new Intent(listaPersone.this,Insert.class);
                 listaPersone.this.startActivity(toRege);
+
                 spin2.setVisibility(View.GONE);
             }
         });
@@ -92,6 +93,7 @@ public class listaPersone extends AppCompatActivity {
                 guarda.putExtra("eta",listuza.get(pos).getEta());
                 listaPersone.this.startActivity(guarda);
                 spin2.setVisibility(View.GONE);
+
             }
         });
 
