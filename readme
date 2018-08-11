@@ -3,7 +3,7 @@ In the database folder u cand find the configuration of the db used.
 
 Current issue :
  1.delete contact;
-     - wen I delete a contact, i get a message error(wrong credentials), but the contact is removed from the db, and to
+     - on delete contact I get a message error(wrong credentials), but the contact is removed from the db, and to
      see the chage, we have to close the app and log in again.
      - delete.php seems fine, just need to check ViewContatto.java and listaPersone.java to understand the problem
  2.update contact;
