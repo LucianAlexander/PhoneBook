@@ -1,0 +1,16 @@
+I created two tables, "users" and "persone"
+
+CREATE TABLE users(
+    user_id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    user_name varchar(16) NOT NULL UNIQUE,
+    user_password varchar(16) NOT NULL
+)ENGINE=InnoDB;
+
+CREATE TABLE persone(
+    peer_id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    peer_nome varchar(16) NOT NULL,
+    peer_cognome varchar(16) NOT NULL,
+    peer_indirizzo varchar(40) NOT NULL,
+    peer_tel bigint NOT NULL UNIQUE,
+    peer_eta int NOT NULL
+)ENGINE=InnoDB;

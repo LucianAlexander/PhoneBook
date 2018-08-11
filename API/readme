@@ -1,0 +1,8 @@
+In var/www/html/sons :
+- make login : login.php
+- register   : reg.php
+- insert new contact : insert.php
+- delete contact : delete.php
+- update contact : update.php
+
+All these files are using the init.php to connect to the mysql database.
