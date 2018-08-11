@@ -11,7 +11,7 @@ public class ModificaRequest extends StringRequest {
     private static final String MOD_REQUEST_URL = "http://192.168.0.4/sons/update.php";
     private Map<String,String> params;
 
-    ModificaRequest(String nome, String cognome, String indirizzo, String telefono,String eta , Response.Listener<String>listener){
+    ModificaRequest(String nome, String cognome, String indirizzo, String telefono,String tel2,String eta , Response.Listener<String>listener){
 
         super(Request.Method.POST, MOD_REQUEST_URL,listener,null);
         params = new HashMap<>();
@@ -25,6 +25,8 @@ public class ModificaRequest extends StringRequest {
         params.put("tel",telefono);
 
         params.put ("eta",eta);
+
+        params.put("tel2",tel2);
 
     }
 

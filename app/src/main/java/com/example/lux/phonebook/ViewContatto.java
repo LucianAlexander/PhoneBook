@@ -41,6 +41,9 @@ public class ViewContatto extends AppCompatActivity {
         del = findViewById(R.id.delete);
 
         Intent data = getIntent();
+
+        final String oldtel = data.getStringExtra("tel");
+
         tnome.setText(data.getStringExtra("nome"));
         tcognome.setText(data.getStringExtra("cognome"));
         tindirizzo.setText(data.getStringExtra("indirizzo"));
@@ -152,7 +155,7 @@ public class ViewContatto extends AppCompatActivity {
                             }
                         }
                     };
-                    ModificaRequest modreq = new ModificaRequest(nome,cognome,indirizzo,telef,eta,responseListener);
+                    ModificaRequest modreq = new ModificaRequest(nome,cognome,indirizzo,telef,oldtel,eta,responseListener);
                     RequestQueue queue = Volley.newRequestQueue(ViewContatto.this);
                     queue.add(modreq);
                 }
