@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#aab2df</color>
+    <color name="colorPrimaryDark">#bdc3e9</color>
+    <color name="colorAccent">#acc2d1</color>
+    <color name="color1">#5583d1</color>
+    <color name="colorText">#ffffff</color>
+    <color name="colorHint">#acdbe2</color>
+    <color name="color3">#085c6b</color>
+    <color name="redVai">#219468</color>
+    <color name="backgraph">#a548948d</color>
+    <color name="danger">#732139</color>
+</resources>
