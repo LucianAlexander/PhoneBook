@@ -15,7 +15,7 @@ The applications purposes are:
 
 In the API folder u can find all the scripts for the server.
 In the database folder u cand find the configuration of the db used.
-All the java files to this path :  PhoneBook/app/src/main/java/com/example/lux/phonebook/LogInRequest.java 
+All the java files to this path :  PhoneBook/app/src/main/java/com/example/lux/phonebook/
 
      
      
